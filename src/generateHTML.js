@@ -12,7 +12,7 @@ module.exports = templateData => {
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma-rtl.min.css">
   <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
   <link rel='stylesheet' href='./style.css'>
-  <title>Team Profile Generator</title>
+  <title>Team Info Generator</title>
 </head>
 <body>
   <!-- Hero header section -->
@@ -20,10 +20,10 @@ module.exports = templateData => {
       <section class="hero is-primary">
           <div class="hero-body">
             <p class="title">
-              Team Profile Generator
+              Team Info Generator
             </p>
             <p class="subtitle">
-              A summary of current team members.
+              My Team
             </p>
           </div>
         </section>
