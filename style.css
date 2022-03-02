@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: white;
+    --secondary: lightslategrey;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    background-color: var(--secondary);
+    border-radius: .25rem;
+    margin: 0.5em;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+    max-width: 50%;
+    display: flex;
+}
+
+.title {
+    color: var(--primary);
+    padding-left: 12px;
+}
+
+.subtitle {
+    color: var(--primary);
+    padding-left: 12px;
+}
+
+.content {
+    color: var(--primary);
+    padding-left: 10px;
+}
