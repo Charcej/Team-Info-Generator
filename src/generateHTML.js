@@ -16,14 +16,14 @@ module.exports = templateData => {
 </head>
 <body>
   <!-- Hero header section -->
-  <header>
-      <section class="hero is-primary">
+  <header style="background-color: red;">
+      <section class="hero is-primary" style="background-color: red; text-align: center;">
           <div class="hero-body">
-            <p class="title">
-              Team Info Generator
-            </p>
-            <p class="subtitle">
+            <h1 class="title">
               My Team
+            </h1>
+            <p class="subtitle">
+            
             </p>
           </div>
         </section>
@@ -46,9 +46,9 @@ module.exports = templateData => {
       border-radius: .25rem;
       margin: 0.5em;
       box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
-      max-width: auto;
+      max-width: 50%;
       /* display: flex; */
-      background-color: lightblue;">
+      background-color: lightgrey;">
       <div class="media">
         <div class="media-left">
         <i class="far fa-user-circle fa-3x"></i>
@@ -76,9 +76,9 @@ module.exports = templateData => {
         border-radius: .25rem;
         margin: 0.5em;
         box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
-        max-width: auto;
+        max-width: 50%;
         /* display: flex; */
-        background-color: lightblue;">
+        background-color: lightgrey;">
     <div class="media">
       <div class="media-left">
       <i class="far fa-user-circle fa-3x"></i>
@@ -108,9 +108,9 @@ module.exports = templateData => {
     border-radius: .25rem;
     margin: 0.5em;
     box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
-    max-width: auto;
+    max-width: 50%;
     /* display: flex; */
-    background-color: lightblue;">
+    background-color: lightgrey;">
     <div class="media">
       <div class="media-left">
       <i class="far fa-user-circle fa-3x"></i>
@@ -139,12 +139,12 @@ module.exports = templateData => {
       border-radius: .25rem;
       margin: 0.5em;
       box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
-      max-width: auto;
+      max-width: 50%;
       /* display: flex; */
-      background-color: lightblue;">
+      background-color: lightgrey;">
       <div class="media">
         <div class="media-left">
-        <i class="far fa-user-circle fa-3x"></i>
+        <i class="far fa-user-circle fa-3x"></i>3
         </div>
         <div class="media-content">
           <p class="title is-4 intern-name" style="margin-left:20px">${intern.name}</p>
