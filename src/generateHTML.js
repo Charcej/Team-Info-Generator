@@ -1,7 +1,7 @@
-
 // Function to Generate HTML page
 module.exports = templateData => {
   console.log(templateData);
+
   return `
   <!DOCTYPE html>
 <html lang="en">
@@ -16,10 +16,10 @@ module.exports = templateData => {
 </head>
 <body>
   <!-- Hero header section -->
-  <header style="background-color: red;">
-      <section class="hero is-primary" style="background-color: red; text-align: center;">
-          <div class="hero-body">
-            <h1 class="title">
+  <header>
+      <section class="hero is-primary">
+          <div class="hero-body" style="background-color: red;">
+            <h1 class="title" style="background-color: red; text-align: center;">
               My Team
             </h1>
             <p class="subtitle">
@@ -56,11 +56,13 @@ module.exports = templateData => {
         <div class="media-content">
           <p class="title is-4 employee-name" style="margin-left:20px">${employee.name}</p>
           <p class="subtitle is-6 employee-title" style="margin-left:20px">${employee.role}</p>
+          <b></b>
         </div>
       </div>
       <div class="content">
-        <p class='id'>ID: ${employee.id}</p>
-        <p class='email'>Email: <a href="mailto:${employee.email}">${employee.email}</p>
+        <p style="background-color: white;" class='id'>ID: ${employee.id}</p>
+        <b></b>
+        <p style="background-color: white;" class='email'>Email: <a href="mailto:${employee.email}">${employee.email}</p>
       </div>
     </div>
   </div> 
@@ -89,9 +91,9 @@ module.exports = templateData => {
       </div>
     </div>
     <div class="content">
-      <p class='id'>ID: ${manager.id}</p>
-      <p class='officeNumber'>Office Number: ${manager.officeNumber}</p>
-      <p class='email'>Email: <a href="mailto:${manager.email}">${manager.email}</p>
+      <p style="background-color: white;" class='id'>ID: ${manager.id}</p>
+      <p style="background-color: white;" class='officeNumber'>Office Number: ${manager.officeNumber}</p>
+      <p style="background-color: white;" class='email'>Email: <a href="mailto:${manager.email}">${manager.email}</p>
     </div>
     </div>
     </div> 
@@ -118,12 +120,15 @@ module.exports = templateData => {
       <div class="media-content">
         <p class="title is-4 engineer-name" style="margin-left:20px">${engineer.name}</p>
         <p class="subtitle is-6 engineer-title" style="margin-left:20px">${engineer.role}</p>
+        <b></b>
       </div>
     </div>
     <div class="content">
-      <p class='id'>ID: ${engineer.id}</p>
-      <p class='gitHub'>GitHub: ${engineer.gitHub}</p>
-      <p class='email'>Email: <a href="mailto:${engineer.email}">${engineer.email}</p>
+      <p style="background-color: white;" class='id'>ID: ${engineer.id}</p>
+      <b></b>
+      <p style="background-color: white;" class='gitHub'>GitHub: ${engineer.gitHub}</p>
+      <b></b>
+      <p style="background-color: white;" class='email'>Email: <a href="mailto:${engineer.email}">${engineer.email}</p>
     </div>
   </div>
   </div> 
@@ -144,17 +149,20 @@ module.exports = templateData => {
       background-color: lightgrey;">
       <div class="media">
         <div class="media-left">
-        <i class="far fa-user-circle fa-3x"></i>3
+        <i class="far fa-user-circle fa-3x"></i>
         </div>
         <div class="media-content">
           <p class="title is-4 intern-name" style="margin-left:20px">${intern.name}</p>
           <p class="subtitle is-6 intern-title" style="margin-left:20px">${intern.role}</p>
+          <b></b>
         </div>
       </div>
       <div class="content">
-        <p class='id'>ID: ${intern.id}</p>
-        <p class='school'>School: ${intern.school}</p>
-        <p class='email'>Email: <a href="mailto:${intern.email}">${intern.email}</p>
+        <p style="background-color: white;" class='id'>ID: ${intern.id}</p>
+        <b></b>
+        <p style="background-color: white;" class='school'>School: ${intern.school}</p>
+        <b></b>
+        <p style="background-color: white;" class='email'>Email: <a href="mailto:${intern.email}">${intern.email}</p>
       </div>
     </div>
   </div> 

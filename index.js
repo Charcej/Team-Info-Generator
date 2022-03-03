@@ -33,7 +33,7 @@ const addStaff = async () => {
         {
             type: 'list',
             name: 'staffSelection',
-            message: 'Which staff member would you like to add next?',
+            message: 'What staff member would you like to add next?',
             choices: [
                 'Employee', 'Intern', 'Engineer', 'No more'
             ],
@@ -70,12 +70,12 @@ const writePage = HTML => new Promise((resolve, reject) => {
             reject(err);
         } else {
             resolve();
-            console.log('You have successfully created your team profile')
+            console.log('You have successfully created your team info')
         }
     })
 });
 
-console.log(`Welcome to the Team Profile Generator, let's start adding your employees!`);
+console.log(`Welcome to the Team Info Generator, let's start by adding your employees.`);
 
 addManager()
 .then(addStaff);
