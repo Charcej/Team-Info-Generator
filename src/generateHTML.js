@@ -19,12 +19,10 @@ module.exports = templateData => {
   <header>
       <section class="hero is-primary">
           <div class="hero-body" style="background-color: red;">
+          <i style="text-align: center;" class="far fa-user-circle fa-3x"></i>
             <h1 class="title" style="background-color: red; text-align: center;">
               My Team
             </h1>
-            <p class="subtitle">
-            
-            </p>
           </div>
         </section>
   </header>
@@ -50,7 +48,6 @@ module.exports = templateData => {
       /* display: flex; */
       background-color: lightgrey;">
       <div class="media">
-        <div class="media-left">
         <i class="far fa-user-circle fa-3x"></i>
         </div>
         <div class="media-content">
@@ -66,8 +63,7 @@ module.exports = templateData => {
       </div>
     </div>
   </div> 
-  `
-  
+  ` 
   };
   
   // Function to create Manager Card
@@ -98,7 +94,6 @@ module.exports = templateData => {
     </div>
     </div> 
     `
-  
   };
    
   
@@ -126,14 +121,13 @@ module.exports = templateData => {
     <div class="content">
       <p style="background-color: white;" class='id'>ID: ${engineer.id}</p>
       <b></b>
-      <p style="background-color: white;" class='gitHub'>GitHub: ${engineer.gitHub}</p>
+      <p style="background-color: white;" class='gitHub'>GitHub: <a href="${engineer.gitHub}"></a>"${engineer.gitHub}</p>
       <b></b>
       <p style="background-color: white;" class='email'>Email: <a href="mailto:${engineer.email}">${engineer.email}</p>
     </div>
   </div>
   </div> 
   `
-  
   };
   
   // Function to create Intern Card
@@ -167,7 +161,6 @@ module.exports = templateData => {
     </div>
   </div> 
   `
-  
   };
 
 // Create Team Member cards
