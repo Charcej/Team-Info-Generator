@@ -47,6 +47,7 @@ module.exports = templateData => {
       /* display: flex; */
       background-color: lightgrey;">
       <div class="media">
+      <i class="fa fa-heart" aria-hidden="true"></i>
         </div>
         <div class="media-content">
           <p class="title is-4 employee-name" style="margin-left:20px">${employee.name}</p>
