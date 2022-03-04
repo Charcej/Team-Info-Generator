@@ -19,7 +19,6 @@ module.exports = templateData => {
   <header>
       <section class="hero is-primary">
           <div class="hero-body" style="background-color: red;">
-          <i style="text-align: center;" class="far fa-user-circle fa-3x"></i>
             <h1 class="title" style="background-color: red; text-align: center;">
               My Team
             </h1>
@@ -48,14 +47,13 @@ module.exports = templateData => {
       /* display: flex; */
       background-color: lightgrey;">
       <div class="media">
-        <i class="far fa-user-circle fa-3x"></i>
         </div>
         <div class="media-content">
           <p class="title is-4 employee-name" style="margin-left:20px">${employee.name}</p>
           <p class="subtitle is-6 employee-title" style="margin-left:20px">${employee.role}</p>
           <b></b>
         </div>
-      </div>
+      
       <div class="content">
         <p style="background-color: white;" class='id'>ID: ${employee.id}</p>
         <b></b>
@@ -79,11 +77,10 @@ module.exports = templateData => {
         background-color: lightgrey;">
     <div class="media">
       <div class="media-left">
-      <i class="far fa-user-circle fa-3x"></i>
       </div>
       <div class="media-content">
-        <p class="title is-4 manager-name" style="margin-left:20px">${manager.name}</p>
-        <p class="subtitle is-6 manager-title" style="margin-left:20px">${manager.role}</p>
+        <p class="title is-4 manager-name">${manager.name}</p>
+        <p class="subtitle is-6 manager-title">${manager.role}</p>
       </div>
     </div>
     <div class="content">
@@ -110,18 +107,17 @@ module.exports = templateData => {
     background-color: lightgrey;">
     <div class="media">
       <div class="media-left">
-      <i class="far fa-user-circle fa-3x"></i>
       </div>
       <div class="media-content">
-        <p class="title is-4 engineer-name" style="margin-left:20px">${engineer.name}</p>
-        <p class="subtitle is-6 engineer-title" style="margin-left:20px">${engineer.role}</p>
+        <p class="title is-4 engineer-name">${engineer.name}</p>
+        <p class="subtitle is-6 engineer-title">${engineer.role}</p>
         <b></b>
       </div>
     </div>
     <div class="content">
       <p style="background-color: white;" class='id'>ID: ${engineer.id}</p>
       <b></b>
-      <p style="background-color: white;" class='gitHub'>GitHub: <a href="${engineer.gitHub}"></a>"${engineer.gitHub}</p>
+      <p style="background-color: white;" class='gitHub'>GitHub: ${engineer.gitHub}</p>
       <b></b>
       <p style="background-color: white;" class='email'>Email: <a href="mailto:${engineer.email}">${engineer.email}</p>
     </div>
@@ -143,11 +139,10 @@ module.exports = templateData => {
       background-color: lightgrey;">
       <div class="media">
         <div class="media-left">
-        <i class="far fa-user-circle fa-3x"></i>
         </div>
         <div class="media-content">
-          <p class="title is-4 intern-name" style="margin-left:20px">${intern.name}</p>
-          <p class="subtitle is-6 intern-title" style="margin-left:20px">${intern.role}</p>
+          <p class="title is-4 intern-name">${intern.name}</p>
+          <p class="subtitle is-6 intern-title">${intern.role}</p>
           <b></b>
         </div>
       </div>
