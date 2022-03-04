@@ -77,9 +77,10 @@ module.exports = templateData => {
         background-color: lightgrey;">
     <div class="media">
       <div class="media-left">
+      <i class="fa fa-coffee" aria-hidden="true"></i>
       </div>
       <div class="media-content">
-        <p class="title is-4 manager-name">${manager.name}</p>
+        <p class="title is-4 manager-name" style="margin-left: 20px">${manager.name}</p>
         <p class="subtitle is-6 manager-title">${manager.role}</p>
       </div>
     </div>
@@ -107,9 +108,10 @@ module.exports = templateData => {
     background-color: lightgrey;">
     <div class="media">
       <div class="media-left">
+      <i class="fa fa-cog" aria-hidden="true"></i>
       </div>
       <div class="media-content">
-        <p class="title is-4 engineer-name">${engineer.name}</p>
+        <p class="title is-4 engineer-name" style="margin-left: 20px;">${engineer.name}</p>
         <p class="subtitle is-6 engineer-title">${engineer.role}</p>
         <b></b>
       </div>
@@ -139,9 +141,10 @@ module.exports = templateData => {
       background-color: lightgrey;">
       <div class="media">
         <div class="media-left">
+        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
         </div>
         <div class="media-content">
-          <p class="title is-4 intern-name">${intern.name}</p>
+          <p class="title is-4 intern-name" style="margin-left: 20px">${intern.name}</p>
           <p class="subtitle is-6 intern-title">${intern.role}</p>
           <b></b>
         </div>
