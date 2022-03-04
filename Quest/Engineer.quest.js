@@ -1,18 +1,18 @@
 const engineerQuest = [
     {
     name: 'name',
-    message: 'Please enter the engineers name:',
+    message: 'Please enter the name of the engineer:',
     type: 'input',
     validate: answer => {
         if (answer !== ''){
             return true;
         }
-        return 'A engineers name is required please enter a name:';
+        return 'A name is required. Please enter a name:';
         }
     },
     {
     name: 'id',
-    message: 'Please enter the engineers ID:',
+    message: 'Please enter the ID number of the engineer:',
     type: 'input',
     validate: answer => {
         if (answer !== ''){
@@ -23,7 +23,7 @@ const engineerQuest = [
     },
     {
     name: 'email',
-    message: 'Please enter the engineers email address:',
+    message: 'Please enter the email address of the engineer:',
     type: 'input',
     validate: answer => {
         if (answer !== ''){

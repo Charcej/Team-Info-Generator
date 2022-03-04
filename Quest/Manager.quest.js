@@ -1,18 +1,18 @@
 const managerQuest = [
     {
     name: 'name',
-    message: 'Please enter the managers name:',
+    message: 'Please enter the name of the manager:',
     type: 'input',
     validate: answer => {
         if (answer !== ''){
             return true;
         }
-        return 'A managers name is required please enter a name:';
+        return 'A manager name is required. Please enter a name:';
         }
     },
     {
     name: 'id',
-    message: 'Please enter the managers ID:',
+    message: 'Please enter the ID of the manager:',
     type: 'input',
     validate: answer => {
         if (answer !== ''){
@@ -23,7 +23,7 @@ const managerQuest = [
     },
     {
     name: 'email',
-    message: 'Please enter the managers email address:',
+    message: 'Please enter the email address of the manager:',
     type: 'input',
     validate: answer => {
         if (answer !== ''){
@@ -34,7 +34,7 @@ const managerQuest = [
     },
     {
     name: 'officeNumber',
-    message: 'Please enter the managers office number:',
+    message: 'Please enter the office number of the manager:',
     type: 'input',
     validate: answer => {
         if (answer !== ''){

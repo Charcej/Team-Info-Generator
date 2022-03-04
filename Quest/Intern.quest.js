@@ -1,18 +1,18 @@
 const internQuest = [
     {
     name: 'name',
-    message: 'Please enter the interns name:',
+    message: 'Please enter the name of the intern:',
     type: 'input',
     validate: answer => {
         if (answer !== ''){
             return true;
         }
-        return 'A interns name is required please enter a name:';
+        return 'A name is required. Please enter a name:';
         }
     },
     {
     name: 'id',
-    message: 'Please enter the interns ID:',
+    message: 'Please enter the ID number of the intern:',
     type: 'input',
     validate: answer => {
         if (answer !== ''){
@@ -23,7 +23,7 @@ const internQuest = [
     },
     {
     name: 'email',
-    message: 'Please enter the interns email address:',
+    message: 'Please enter the email address of the intern:',
     type: 'input',
     validate: answer => {
         if (answer !== ''){
@@ -34,13 +34,13 @@ const internQuest = [
     },
     {
     name: 'school',
-    message: 'Please enter the interns school:',
+    message: 'Please enter the where the intern went to school:',
     type: 'input',
     validate: answer => {
         if (answer !== ''){
             return true;
         }
-        return 'Please enter the interns school:';
+        return 'Please enter a school name:';
         }
     },
 ];

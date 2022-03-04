@@ -1,18 +1,18 @@
 const employeeQuest = [
     {
     name: 'name',
-    message: 'Please enter the employees name:',
+    message: 'Please enter the name of the employee:',
     type: 'input',
     validate: answer => {
         if (answer !== ''){
             return true;
         }
-        return 'A employees name is required please enter a name:';
+        return 'A name is required. Please enter a name:';
         }
     },
     {
     name: 'id',
-    message: 'Please enter the employees ID:',
+    message: 'Please enter the ID number of the employee:',
     type: 'input',
     validate: answer => {
         if (answer !== ''){
@@ -23,7 +23,7 @@ const employeeQuest = [
     },
     {
     name: 'email',
-    message: 'Please enter the employees email address:',
+    message: 'Please enter the email address of the employee:',
     type: 'input',
     validate: answer => {
         if (answer !== ''){

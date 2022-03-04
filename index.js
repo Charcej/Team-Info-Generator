@@ -2,20 +2,14 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const jest = require('jest');
 const managerQuest = require('./quest/Manager.quest');
-
-//Prompts
 const addEmployee = require('./lib/Prompt/addEmployee');
 const addEngineer = require('./lib/Prompt/addEngineer');
 const addIntern = require('./lib/Prompt/addIntern');
-// models
 const Manager = require('./lib/Manager');
 const generateHTML = require('./src/generateHTML');
 const { resolve } = require('path');
-
-// Empty array to hold user responses
 const userResponse = [];
 
-// Function to record manager answers from user
 const addManager = async () => {
     const managerAnswers = await inquirer.prompt(managerQuest)
     const {name, id, email, officeNumber} = managerAnswers;
@@ -24,8 +18,6 @@ const addManager = async () => {
     console.log(manager)
 };
 
-
-// Function to select next staff role
 const addStaff = async () => {
     console.log('Select additional staff members');
 
@@ -63,7 +55,6 @@ const addStaff = async () => {
     addStaff();
 };
 
-// Function to create HTML page
 const writePage = HTML => new Promise((resolve, reject) => {
     fs.writeFile('./dist/index.html', HTML, err => {
         if (err){
