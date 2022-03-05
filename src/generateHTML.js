@@ -48,13 +48,12 @@ module.exports = templateData => {
       background-color: lightgrey;">
       <div class="media">
       <i class="fa fa-heart" aria-hidden="true"></i>
-        </div>
+      </div>
         <div class="media-content">
           <p class="title is-4 employee-name" style="margin-left:20px">${employee.name}</p>
           <p class="subtitle is-6 employee-title" style="margin-left:20px">${employee.role}</p>
           <b></b>
         </div>
-      
       <div class="content">
         <p style="background-color: white;" class='id'>ID: ${employee.id}</p>
         <b></b>
