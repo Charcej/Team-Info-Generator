@@ -10,6 +10,7 @@ const generateHTML = require('./src/generateHTML');
 const { resolve } = require('path');
 const userResponse = [];
 
+// Takes in info about manager from user input
 const addManager = async () => {
     const managerAnswers = await inquirer.prompt(managerQuestions)
     const {name, id, email, officeNumber} = managerAnswers;
@@ -18,6 +19,7 @@ const addManager = async () => {
     console.log(manager)
 };
 
+// Runs through all other possible roles
 const addStaff = async () => {
     console.log('Select additional staff members');
 
@@ -55,6 +57,7 @@ const addStaff = async () => {
     addStaff();
 };
 
+// Creates the actual HTML page after someone hits 'no more' from prompt choices of role to add
 const writePage = HTML => new Promise((resolve, reject) => {
     fs.writeFile('./dist/index.html', HTML, err => {
         if (err){

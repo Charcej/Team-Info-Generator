@@ -1,4 +1,4 @@
-// Function to Generate HTML page
+// HTML page generator
 module.exports = templateData => {
   console.log(templateData);
 
@@ -35,7 +35,7 @@ module.exports = templateData => {
 };
 
 
-  // Function to create Employee Card
+  // Employee section
   const addEmployee = employee => {
     return `
     <div class="card team-card employee-card">
@@ -64,7 +64,7 @@ module.exports = templateData => {
   ` 
   };
   
-  // Function to create Manager Card
+  // Manager section
   const addManager = manager => {
      return `
       <div class="card team-card manager-card">
@@ -95,7 +95,7 @@ module.exports = templateData => {
   };
    
   
-  // Function to create Engineer Card
+  // Engineer section
   const addEngineer = engineer => {
     return `
     <div class="card team-card engineer-card">
@@ -128,7 +128,7 @@ module.exports = templateData => {
   `
   };
   
-  // Function to create Intern Card
+  // Intern section
   const addIntern = intern => { 
     return `
     <div class="card team-card intern-card">
@@ -161,7 +161,7 @@ module.exports = templateData => {
   `
   };
 
-// Create Team Member cards
+// Creates the individual 'business cards' to display on the page under title (as many as are entered)
 const teamMemberCards = (templateData) => {
   let output = '';
   templateData.forEach((member) => {
