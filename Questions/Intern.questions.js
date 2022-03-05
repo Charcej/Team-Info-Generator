@@ -1,7 +1,7 @@
-const engineerQuest = [
+const internQuestions = [
     {
     name: 'name',
-    message: 'Please enter the name of the engineer:',
+    message: 'Please enter the name of the intern:',
     type: 'input',
     validate: answer => {
         if (answer !== ''){
@@ -12,7 +12,7 @@ const engineerQuest = [
     },
     {
     name: 'id',
-    message: 'Please enter the ID number of the engineer:',
+    message: 'Please enter the ID number of the intern:',
     type: 'input',
     validate: answer => {
         if (answer !== ''){
@@ -23,7 +23,7 @@ const engineerQuest = [
     },
     {
     name: 'email',
-    message: 'Please enter the email address of the engineer:',
+    message: 'Please enter the email address of the intern:',
     type: 'input',
     validate: answer => {
         if (answer !== ''){
@@ -33,16 +33,16 @@ const engineerQuest = [
         }
     },
     {
-    name: 'gitHub',
-    message: 'Please enter the GitHub username:',
+    name: 'school',
+    message: 'Please enter the where the intern went to school:',
     type: 'input',
     validate: answer => {
         if (answer !== ''){
             return true;
         }
-        return 'Please enter a valid GitHub username:';
+        return 'Please enter a school name:';
         }
     },
 ];
 
-module.exports = engineerQuest
+module.exports = internQuestions

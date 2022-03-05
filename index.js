@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const jest = require('jest');
-const managerQuest = require('./quest/Manager.quest');
+const managerQuestions = require('./questions/Manager.questions');
 const addEmployee = require('./lib/Prompt/addEmployee');
 const addEngineer = require('./lib/Prompt/addEngineer');
 const addIntern = require('./lib/Prompt/addIntern');
@@ -11,7 +11,7 @@ const { resolve } = require('path');
 const userResponse = [];
 
 const addManager = async () => {
-    const managerAnswers = await inquirer.prompt(managerQuest)
+    const managerAnswers = await inquirer.prompt(managerQuestions)
     const {name, id, email, officeNumber} = managerAnswers;
     const manager = new Manager (name, id, email, officeNumber);
     userResponse.push(manager);

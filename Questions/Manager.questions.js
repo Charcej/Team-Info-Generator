@@ -1,18 +1,18 @@
-const internQuest = [
+const managerQuestions = [
     {
     name: 'name',
-    message: 'Please enter the name of the intern:',
+    message: 'Please enter the name of the manager:',
     type: 'input',
     validate: answer => {
         if (answer !== ''){
             return true;
         }
-        return 'A name is required. Please enter a name:';
+        return 'A manager name is required. Please enter a name:';
         }
     },
     {
     name: 'id',
-    message: 'Please enter the ID number of the intern:',
+    message: 'Please enter the ID of the manager:',
     type: 'input',
     validate: answer => {
         if (answer !== ''){
@@ -23,7 +23,7 @@ const internQuest = [
     },
     {
     name: 'email',
-    message: 'Please enter the email address of the intern:',
+    message: 'Please enter the email address of the manager:',
     type: 'input',
     validate: answer => {
         if (answer !== ''){
@@ -33,16 +33,16 @@ const internQuest = [
         }
     },
     {
-    name: 'school',
-    message: 'Please enter the where the intern went to school:',
+    name: 'officeNumber',
+    message: 'Please enter the office number of the manager:',
     type: 'input',
     validate: answer => {
         if (answer !== ''){
             return true;
         }
-        return 'Please enter a school name:';
+        return 'Please enter a valid office number:';
         }
     },
 ];
 
-module.exports = internQuest
+module.exports = managerQuestions

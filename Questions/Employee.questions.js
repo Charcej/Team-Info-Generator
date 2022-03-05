@@ -1,4 +1,4 @@
-const employeeQuest = [
+const employeeQuestions = [
     {
     name: 'name',
     message: 'Please enter the name of the employee:',
@@ -34,4 +34,4 @@ const employeeQuest = [
     },
 ];
 
-module.exports = employeeQuest
+module.exports = employeeQuestions
