@@ -18,8 +18,8 @@ module.exports = templateData => {
   <!-- Hero header section -->
   <header>
       <section class="hero is-primary">
-          <div class="hero-body" style="background-color: red;">
-            <h1 class="title" style="background-color: red; text-align: center;">
+          <div class="hero-body" style="background-color: #ff1a1a;">
+            <h1 class="title" style="background-color: #ff1a1a; text-align: center;">
               My Team
             </h1>
           </div>
@@ -45,7 +45,7 @@ module.exports = templateData => {
       box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
       max-width: 50%;
       /* display: flex; */
-      background-color: lightgrey;">
+      background-color: lightblue;">
       <div class="media">
       <i class="fa fa-heart" aria-hidden="true"></i>
       </div>
@@ -74,7 +74,7 @@ module.exports = templateData => {
         box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
         max-width: 50%;
         /* display: flex; */
-        background-color: lightgrey;">
+        background-color: lightblue;">
     <div class="media">
       <div class="media-left">
       <i class="fa fa-coffee" aria-hidden="true"></i>
@@ -105,7 +105,7 @@ module.exports = templateData => {
     box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
     max-width: 50%;
     /* display: flex; */
-    background-color: lightgrey;">
+    background-color: lightblue;">
     <div class="media">
       <div class="media-left">
       <i class="fa fa-cog" aria-hidden="true"></i>
@@ -138,7 +138,7 @@ module.exports = templateData => {
       box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
       max-width: 50%;
       /* display: flex; */
-      background-color: lightgrey;">
+      background-color: lightblue;">
       <div class="media">
         <div class="media-left">
         <i class="fa fa-graduation-cap" aria-hidden="true"></i>
