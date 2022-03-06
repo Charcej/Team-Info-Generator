@@ -22,6 +22,8 @@ Clone the repo, and at terminal run 'npm install', then 'node index.js, follow t
 ## Usage
 ![Screen Shot 2022-03-05 at 4 55 46 PM](https://user-images.githubusercontent.com/94859458/156901113-d8905a11-e55e-4bcb-8d12-95cad9e8a804.png)
 
+https://youtu.be/JS8dd_BirdM
+
 ## Test Instructions
 To run tests, install jest ('npm install jest') and type in 'npm run test' to see that everything passes.
 
