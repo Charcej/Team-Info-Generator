@@ -21,11 +21,11 @@ A application that takes in info for a team of people that includes manager, emp
 Clone the repo, and at terminal run 'npm install', then 'node index.js, follow the prompts and look for a new HTML doc in the dist/ folder to appear which you can then open in a default browser.
 ## Usage
 
-* Screen Shot
+**Screen Shot**
 
 ![Screen Shot 2022-03-05 at 4 55 46 PM](https://user-images.githubusercontent.com/94859458/156901113-d8905a11-e55e-4bcb-8d12-95cad9e8a804.png)
 
-* Walkthrough Video
+**Walkthrough Video**
 
 https://youtu.be/JS8dd_BirdM
 
