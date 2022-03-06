@@ -64,7 +64,7 @@ const writePage = HTML => new Promise((resolve, reject) => {
             reject(err);
         } else {
             resolve();
-            console.log('You have successfully created your team info')
+            console.log('You have successfully created your team info file')
         }
     })
 });
